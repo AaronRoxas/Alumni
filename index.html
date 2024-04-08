@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <title>Application - LPU Cavite Alumni</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Start -->
+            <img src="img/logo.png" alt="" srcset="" width="150px" height="150px" id="text-center">
+            <h1 id="text-center" style="margin-top: -12px;">Alumni Membership Application</h1>
+            <div class="privacy-notice">
+                <hr>
+                <h2 id="text-center">Privacy Notice</h2>
+                <p>In Lyceum of the Philippines University we value your privacy and aim to uphold the same when processing your personal data.</p>
+                <p>For purposes of activating, accessing your alumni portal and research purposes by LPU Cavite community, we may collect basic information about you such as your student number, name, birthdate, course, year, and semester graduated, office 365 email address. civil status, gender, complete home address, contact number, email address, jobs180 resume link and employment details.</p>
+                <p>We are committed to protecting your personal data from loss, misuse, and any unauthorized processing activities, and will take all reasonable precautions to safeguard its security and confidentiality, Neither will we disclose, share, or transfer the same to any third party without your consent.</p>
+                <p>Your data will be retained by the Alumni Office permanently, the same may be updated and accessed by the Data Subject from time to time upon request. Obsolete data shall be disposed of in a safe and secure manner.</p>
+                <p>We recognize your rights with respect to your personal data, Should you wish to exercise any of them or if you have any concerns regarding our processing activities, you may contact us privacy.cavite@pu.edu.ph</p>
+                <p>Thank you.</p>
+            </div>
+            <h3 id="warning"><span style="color: tomato;">General Instruction: Please complete all the required fields marked with asterisk(*)</span></h3>
+            <form action="validate.php" method="get">
+            <!--Forms  -->
+            <div class="basic-info">
+                <h2><img src="img/information.png" alt="" srcset="" height="24px" width="24px" id="info-pic" style="margin-bottom: -2px;"> Basic Information</h2>
+                <hr>
+                
+                    <div class="basic-info-table">
+
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="salutation">Salutation <span id="require">*</span></label>
+                                <select name="salutation" id="salutation" required>
+                                    <option value="None Selected" selected>None Selected</option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Atty.">Atty.</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Engr.">Engr.</option>
+                                </select>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="maiden">Maiden Name</label>
+                                <input type="text" name="maiden" id="maiden" placeholder="For married females only">
+                            </div>
+                            </div>
+                            <div class="basic-info-row">
+                                <div class="basic-info-cell">
+                                    <label for="fname">First Name<span id="require">*</span></label>
+                                    <input type="text" name="fname" id="fname" required>
+                                </div>
+                                <div class="basic-info-cell">
+                                    <label for="civil">Civil Status <span id="require">*</span></label>
+                                    <select name="civil" id="civil" required>
+                                        <option value="None Selected" selected>None Selected</option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Divorced">Divorced</option>
+                                        <option value="Widowed">Widowed</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="basic-info-row">
+                                <div class="basic-info-cell">
+                                    <label for="mname">Middle Name</label>
+                                    <input type="text" name="mname" id="mname">
+                                </div>
+                                <div class="basic-info-cell">
+                                    <label for="gender">Gender at Birth <span id="require">*</span></label>
+                                    <select name="gender" id="gender" required>
+                                        <option value="None Selected" selected>None Selected</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>  
+                            </div>
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="lname">Last Name<span id="require">*</span></label>
+                                <input type="text" name="lname" id="lname" required>
+                            </div>    
+                            <div class="basic-info-cell">
+                                <label for="bdate">Birthdate <span id="require">*</span></label>
+                                <input type="date" name="bdate" id="bdate" required>
+                            </div>    
+                        </div>
+                    </div>
+            </div>
+            <!-- Contact Section -->
+            <div class="basic-info">
+                <h2><img src="img/call.png" alt="" srcset="" height="24px" width="24px" id="info-pic" style="margin-bottom: -3px;"> Contact Information</h2>
+                <hr>
+                    <div class="basic-info-table">
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="num">Contact Number<span id="require">*</span></label>
+                                <input type="tel" name="num" id="num" required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="s-emailadd">Secondary Email Address <span id="require">*</span></label>
+                                <input type="email" name="s-emailadd" id="s-emailadd" required>
+                            </div>                   
+                        </div>
+                     
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="p-emailadd">Primary Email Address <span id="require">*</span></label>
+                                <input type="email" name="p-emailadd" id="p-emailadd" placeholder="Your Microsoft 365 Email Address" required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="resume">Resume Link</label>
+                                <input type="text" name="resume" id="resume">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Address Section -->
+            <div class="basic-info">
+                <h2><img src="img/location.png" alt="" srcset="" height="24px" width="24px" id="info-pic" style="margin-bottom: -3px;"> Address</h2>
+                <hr>
+                    <div class="basic-info-table">
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="Address">Address <span id="require">*</span></label>
+                                <input type="text" name="address" required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="City">City & Municipality <span id="require">*</span></label>
+                                <input type="text" name="city" required>
+                            </div>
+                        </div>
+
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="Province">Province <span id="require">*</span></label>
+                                <input type="text" name="province" required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="Barangay">Barangay <span id="require">*</span></label>
+                                <input type="text" name="barangay" required>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        
+            <!-- Educational Section -->
+            <div class="basic-info">
+                <h2><img src="img/educ.png" alt="" srcset="" height="24px" width="24px" id="info-pic" style="margin-bottom: -3px;"> Educational Background</h2>
+                <hr>
+                    <div class="basic-info-table">
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="studNum">Student Number <span id="require">*</span></label>
+                                <input type="number" name="studNum" placeholder="2022-1-00000" required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="graduate">Year Graduated <span id="require">*</span></label>
+                                <select name="graduate" id="graduate" required>
+                                    <option value="None Selected" selected >None Selected</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="program">Program <span id="require">*</span></label>
+                                <select name="program" id="program" required>
+                                    <option value="None Selected" selected >None Selected</option>
+                                    <option value="Computer Science">Bachelor of Science in Computer Science</option>
+                                    <option value="Information Technology">Bachelor of Science in Information Technology</option>
+                                    <option value="Medical Technology">Bachelor of Science in Medical Technology</option>
+                                    <option value="Nursing">Bachelor of Science in Nursing</option>
+                                    <option value="Pharmacy">Bachelor of Science in Pharmacy</option>
+                                    <option value="Architecture">Bachelor of Science in Architecture</option>
+                                    <option value="Civil Engineering">Bachelor of Science in Civil Engineering</option>
+                                    <option value="Computer Engineering">Bachelor of Science in Computer Engineering</option>
+                                    <option value="Mechanical Engineering">Bachelor of Science in Mechanical Engineering</option>
+                                </select>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="sem-grad">Semester Graduated <span id="require">*</span></label>
+                                <select name="sem-grad" id="graduate" required>
+                                    <option value="None Selected" selected >None Selected</option>
+                                    <option value="First">First</option>
+                                    <option value="Second">Second</option>
+                                    <option value="Summer">Summer</option>
+                                    <option value="Third">Third</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Work Section -->
+            <div class="basic-info">
+                <h2><img src="img/work.png" alt="" srcset="" height="24px" width="24px" id="info-pic" style="margin-bottom: -3px;"> Work Experiences</h2>
+                <hr>
+                    <div class="basic-info-table">
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="company">Company Name <span id="require">*</span></label>
+                                <input type="text" name="company"required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="supervisor-name">Name of Immediate Supervisor</label>
+                                <input type="text" name="supervisor-name">
+                            </div>
+                        </div>
+
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="company-address">Company Address <span id="require">*</span></label>
+                                <input type="text" name="company-address"required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="supervisor-email">Email Address of Immediate Supervisor</label>
+                                <input type="email" name="supervisor-email">
+                            </div>
+                        </div>
+
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="company-pos">Position in the Company <span id="require">*</span></label>
+                                <input type="text" name="company-pos"required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="supervisor-number">Contact Number of Immediate Supervisor</label>
+                                <input type="tel" name="supervisor-number">
+                            </div>
+                        </div>
+                        
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="employment-date">Date of Employment <span id="require">*</span></label>
+                                <input type="date" name="employment-date"required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="business-number">Business Phone Number</label>
+                                <input type="tel" name="business-number">
+                            </div>
+                        </div>
+
+                        <div class="basic-info-row">
+                            <div class="basic-info-cell">
+                                <label for="employment-status">Employment Status<span id="require">*</span></label>
+                                <input type="text" name="employment-status"required>
+                            </div>
+                            <div class="basic-info-cell">
+                                <label for="fax-number">Fax Number</label>
+                                <input type="tel" name="fax-number">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="consent-notice">
+                <hr>
+                <h2 id="text-center">Consent</h2>
+                <p>By choosing "I Agree" and clicking the "Submit" button below, I hereby acknowledge and certify that I have carefully read and understood the Terms and Conditions of the Data Privacy Policy/Notice of the Lyceum of the Philippine University (LPU).</p>
+
+                <p>By providing personal information to LPU, I am confirming that the data is true and correct. I understand that LPU reserves the right to revise any decision made on the basis of the information I provided should the information be found to be untrue or incorrect. I likewise agree that any issue that may arise in connection with the processing of my personal information will be settled amicably with LPU before resorting to appropriate arbitration or court proceedings within the Philippine jurisdiction.</p>
+
+                <p>Finally, I am providing my voluntary consent and authorization to LPU and its authorized representatives to lawfully process my data/information. This includes to disclose your information to accredited/affiliated third parties or independent/non-affiliated third parties, whether local or foreign, in the following circumstances:
+                </p>
+                
+                <ul>
+                    <li>Processing of Alumni ID Card
+                    </li>
+                    <li>Processing of discounts and perks of alumni
+                    </li>
+                </ul>
+
+                    <br>
+                    <input type="radio" name="consent" value="Agree"required>
+                    <label for="male">I Agree</label>
+                    <br>
+                    <input type="radio" name="consent" value="Disagree"required>
+                    <label for="male">I Disagree</label>
+            </div>
+            <input type="submit" value="Submit Application">
+        </form>
+        <footer>© 2024 · Lyceum of the Philippines University Cavite · All Rights Reserved</footer>
+    </div>
+</body>
+</html>

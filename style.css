@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Quicksand';
+    color: black;
+    background-image: url("img/lpucav.JPG");
+    height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    margin: 32px 32px;
+    background-color: white;
+    padding: 0px 24px ;
+    border-radius: 8px;
+}
+/* Used to center text or img */
+#text-center{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.privacy-notice hr, .consent-notice hr{
+    border-top: 5px solid #dadada;
+    margin: 12px 0px;
+
+}
+.privacy-notice p, .consent-notice p {
+    text-align: justify;
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+.privacy-notice h2, .consent-notice h2{
+    padding-bottom: 20px;
+}
+
+.consent-notice ul{
+    padding-left: 40px;
+}
+
+/* Form Info Section */
+
+#warning{
+    padding-bottom: 12px;
+}
+#require{
+    color: tomato;
+}
+
+.basic-info-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.basic-info-row {
+    display: table-row;
+}
+
+.basic-info-cell {
+    display: table-cell;
+    padding: 5px;
+}
+
+.basic-info-cell label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.basic-info-cell input,
+.basic-info-cell select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.basic-info{
+    margin: 14px 0px;
+}
+.basic-info hr{
+    margin: 14px 0px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: 1px solid black;
+    cursor:pointer;
+    margin: 20px 0px;
+    transition: 0.3s;
+}
+input[type="submit"]:hover{
+    background-color: #252525;
+    color: white;
+}
+footer
+{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+}
+input, select{
+    font-family: 'Quicksand';
+}
